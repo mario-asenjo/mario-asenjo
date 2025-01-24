@@ -1,4 +1,11 @@
-## Hi there 👋
+# Mario Asenjo 👋
+## Cybersecurity - Software Development
+> ## System Administrator
+> ### UNIX
+> ### WINDOWS
+
+> ## Junior Developer -> C++, Java, Python, JS
+> ## Cybersecurity research enthusiast
 
 <!--
 **mario-asenjo/mario-asenjo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

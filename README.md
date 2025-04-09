@@ -45,31 +45,13 @@ Apasionado por el desarrollo de software, especializado en C++, Java y Python. M
 ---
 
 ## **📚 Educación y Certificaciones**  
-- **Grado en Ingeniería Informática** – [Nombre de la Universidad]  
-- Certificación en Ciberseguridad – [Nombre de la Institución]  
-- Certificado en Programación Avanzada con Python – [Plataforma/Institución]  
 
 ---
 
 ## **🌐 Contacto**  
-- **LinkedIn**: [linkedin.com/in/tu-perfil](#)  
-- **GitHub**: [github.com/tu-usuario](#)  
-- **Correo Electrónico**: [tucorreo@example.com](#)  
+
 
 ---
 
 **_Siempre dispuesto a colaborar en proyectos y aprender algo nuevo._** 
-<!--
-**mario-asenjo/mario-asenjo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->

@@ -1,19 +1,19 @@
 # **Mario Asenjo Pérez**  
-### Desarrollador en C++ | Java | Python  
+### Developer
 #### Entusiasta de la Ciberseguridad y Desarrollo de Software  
 
 ---
 
 ## **🎯 Sobre Mí**  
-Apasionado por el desarrollo de software, especializado en C++, Java y Python. Mi interés por la ciberseguridad me lleva a explorar vulnerabilidades y mejorar la seguridad de sistemas y aplicaciones. Siempre en busca de nuevos retos para combinar eficiencia y creatividad en soluciones robustas.  
+Apasionado por el desarrollo de software, especializado en C/C++, Java y Python. Mi interés por la ciberseguridad me lleva a explorar vulnerabilidades e indagar y mejorar la seguridad de sistemas y aplicaciones. Siempre en busca de nuevos retos para combinar eficiencia y creatividad en soluciones robustas.  
 
 ---
 
 ## **🛠️ Competencias Técnicas**  
 
 ### **Lenguajes de Programación**  
-- **C++**: Desarrollo de sistemas, programación competitiva y optimización.  
-- **Java**: Aplicaciones empresariales, desarrollo móvil y POO.  
+- **C/C++**: Desarrollo de sistemas, programación competitiva, proyectos personales.  
+- **Java**: Aplicaciones empresariales, desarrollo móvil.  
 - **Python**: Automatización, análisis de datos y scripting para ciberseguridad.  
 
 ### **Ciberseguridad**  

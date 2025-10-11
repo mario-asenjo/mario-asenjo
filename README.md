@@ -14,7 +14,7 @@ Apasionado por el desarrollo de software, especializado en C/C++, Java y Python.
 ### **Lenguajes de Programación**  
 - **C/C++**: Desarrollo de sistemas, programación competitiva, proyectos personales.  
 - **Java**: Aplicaciones empresariales, desarrollo móvil.  
-- **Python**: Automatización, análisis de datos y scripting para ciberseguridad.  
+- **Python**: Interfaces, automatización, análisis de datos y scripting para ciberseguridad.  
 
 ### **Ciberseguridad**  
 - Análisis y explotación de vulnerabilidades.  
@@ -40,16 +40,7 @@ Apasionado por el desarrollo de software, especializado en C/C++, Java y Python.
 
 ### **3. Herramienta de Escaneo de Vulnerabilidades (Python)**  
 - Creación de un script para identificar y reportar vulnerabilidades en servicios web.  
-- Automatización de pruebas de penetración para procesos repetitivos.  
-
----
-
-## **📚 Educación y Certificaciones**  
-
----
-
-## **🌐 Contacto**  
-
+- Automatización de pruebas de penetración para procesos repetitivos.    
 
 ---
 

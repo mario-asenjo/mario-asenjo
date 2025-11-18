@@ -52,7 +52,7 @@
   <br />
 
   <img
-    src="https://github-readme-streak-stats.herokuapp.com/?user=mario-asenjo"
+    src="https://github-readme-streak-stats.herokuapp.com/?user=mario-asenjo&"
     alt="mario-asenjo streak stats"
   />
 

@@ -9,7 +9,10 @@
 
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=mario-asenjo&theme=onedark&margin-w=10&margin-h=10" alt="mario-asenjo trophies" />
+    <img
+      src="https://github-profile-trophy.vercel.app/?username=mario-asenjo&theme=onedark&margin-w=10&margin-h=10&column=2"
+      alt="mario-asenjo trophies"
+    />
   </a>
 </p>
 

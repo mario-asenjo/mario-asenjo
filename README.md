@@ -2,85 +2,111 @@
 <h3 align="center">Full-stack developer & cybersecurity enthusiast from Spain</h3>
 
 <p align="center">
-  <em>Currently sharpening my skills at 42 (login: <strong>masenjo</strong>) and building projects around systems, web and security.</em>
+  <em>
+    Currently sharpening my skills at 42 (login: <strong>masenjo</strong>) and building projects around systems, web and security.
+  </em>
+</p>
+
+<p align="center">
+  <a href="mailto:mario.asenjo.htb@gmail.com"><strong>mario.asenjo.htb@gmail.com</strong></a>
 </p>
 
 ---
 
-<p align="center">
+<div align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
     <img
       src="https://github-profile-trophy.vercel.app/?username=mario-asenjo&theme=onedark&margin-w=10&margin-h=10&column=2"
       alt="mario-asenjo trophies"
     />
   </a>
-</p>
+</div>
 
 ---
 
-### 👨‍💻 About me
+## 👨‍💻 About me
 
 - 💼 Focused on **full-stack development** and **cybersecurity**
 - 🧠 Enjoy working close to the **system** (C, Linux, networking) and **backend** (Java, Spring, SQL, containers)
-- 🎯 Open to **junior / internship roles** in backend, full-stack or security-oriented teams  
+- 🎯 Open to **junior / internship roles** in backend, full-stack or security-oriented teams
 - 🐕 Fun fact: **I'm a dog trainer** and I've worked with **K9 special units and security groups** teaching and learning
 - 📫 How to reach me: **mario.asenjo.htb@gmail.com**
 
 ---
 
-<h3 align="center">🌱 42 & GitHub Stats</h3>
+<h2 align="center">🌱 42 & GitHub Stats</h2>
 
-<!-- 42 badge -->
-<p align="center">
-  <a href="https://github.com/oakoudad/badge42">
-    <img src="https://badge.mediaplus.ma/greenbinary/masenjo" alt="masenjo's 42 stats" />
-  </a>
-</p>
-
-<!-- GitHub stats -->
 <div align="center">
+  <a href="https://github.com/oakoudad/badge42">
+    <img
+      src="https://badge.mediaplus.ma/greenbinary/masenjo"
+      alt="masenjo's 42 stats"
+    />
+  </a>
+</div>
 
+<br />
+
+<div align="center">
   <img
     src="https://github-readme-stats.vercel.app/api/top-langs?username=mario-asenjo&show_icons=true&locale=en&layout=compact"
     alt="mario-asenjo top languages"
   />
+</div>
 
-  <br />
+<br />
 
+<div align="center">
   <img
     src="https://github-readme-stats.vercel.app/api?username=mario-asenjo&show_icons=true&locale=en"
     alt="mario-asenjo github stats"
   />
+</div>
 
-  <br />
+<br />
 
+<div align="center">
   <img
     src="https://github-readme-streak-stats.herokuapp.com/?user=mario-asenjo&"
     alt="mario-asenjo streak stats"
   />
-
 </div>
 
 ---
 
-<h3 align="center">🤝 Connect with me</h3>
+<h2 align="center">🐍 Git History Mini-game</h2>
+
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/mario-asenjo/mario-asenjo/output/github-contribution-grid-snake.svg"
+    alt="snake animation"
+  />
+</p>
+
+---
+
+<h2 align="center">🤝 Connect with me</h2>
+
 <p align="center">
   <a href="https://linkedin.com/in/mario-asenjo-pérez-389547213" target="_blank">
-    <img align="center"
+    <img
+      align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
       alt="linkedin mario asenjo"
       height="30" width="40"
     />
   </a>
   <a href="https://codeforces.com/profile/mario_asenjo" target="_blank">
-    <img align="center"
+    <img
+      align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg"
       alt="codeforces mario_asenjo"
       height="30" width="40"
     />
   </a>
   <a href="https://www.leetcode.com/mario_asenjo" target="_blank">
-    <img align="center"
+    <img
+      align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
       alt="leetcode mario_asenjo"
       height="30" width="40"
@@ -90,7 +116,7 @@
 
 ---
 
-<h3 align="center">🛠 Languages and Tools</h3>
+<h2 align="center">🛠 Languages and Tools</h2>
 
 <p align="center">
   <a href="https://developer.android.com" target="_blank" rel="noreferrer">

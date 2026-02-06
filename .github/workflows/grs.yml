@@ -38,16 +38,12 @@ jobs:
       # --- Trophy (download SVG and commit it) ---
       - name: Download trophies card
         run: |
-          curl -fsSL \
-            "https://github-profile-trophy.vercel.app/?username=${{ github.repository_owner }}&theme=onedark&margin-w=10&margin-h=10&column=2" \
-            -o profile/trophies.svg
+          curl -fsSL "https://github-profile-trophy.vercel.app/?username=${{ github.repository_owner }}&theme=onedark&margin-w=10&margin-h=10&column=2" -o profile/trophies.svg
 
       # --- Streak (download SVG and commit it) ---
       - name: Download streak card
         run: |
-          curl -fsSL \
-            "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}" \
-            -o profile/streak.svg
+          curl -fsSL "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}" -o profile/streak.svg
 
       # --- 42 badge (optional: uncomment if you want to snapshot it too) ---
       # - name: Download 42 badge

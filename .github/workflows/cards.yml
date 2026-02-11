@@ -45,7 +45,7 @@ jobs:
         env:
           USERNAME: ${{ github.repository_owner }}
           # Cambia esto por tu dominio de github-readme-stats self-hosted (sin / final)
-          STATS_BASE: https://TU-STATS.vercel.app
+          STATS_BASE: github-readme-stats-graxpxvx7-marios-projects-1a92c7d7.vercel.app
         run: |
           set -euxo pipefail
 

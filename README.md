@@ -16,11 +16,12 @@
 <div align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
     <img
-      src="https://github-profile-trophy.vercel.app/?username=mario-asenjo&theme=onedark&margin-w=10&margin-h=10&column=2"
+      src="profile/trophies.svg"
       alt="mario-asenjo trophies"
     />
   </a>
 </div>
+
 
 ---
 
@@ -49,28 +50,31 @@
 
 <div align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api/top-langs?username=mario-asenjo&show_icons=true&locale=en&layout=compact"
+    src="profile/top-langs.svg"
     alt="mario-asenjo top languages"
   />
 </div>
 
+
 <br />
 
 <div align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api?username=mario-asenjo&show_icons=true&locale=en"
+    src="profile/stats.svg"
     alt="mario-asenjo github stats"
   />
 </div>
 
+
 <br />
 
 <div align="center">
   <img
-    src="https://github-readme-streak-stats.herokuapp.com/?user=mario-asenjo&"
+    src="profile/streak.svg"
     alt="mario-asenjo streak stats"
   />
 </div>
+
 
 ---
 

@@ -26,24 +26,49 @@ jobs:
       - name: Download cards (trophies, stats, langs, streak)
         env:
           USERNAME: ${{ github.repository_owner }}
+          TROPHY_BASE: https://TU-DOMINIO.vercel.app
         run: |
           set -euxo pipefail
 
           ua="Mozilla/5.0 (GitHub Actions; profile cards)"
 
-          curl -fsSL -A "$ua" \
-            "https://github-profile-trophy.vercel.app/?username=${USERNAME}&theme=onedark&margin-w=10&margin-h=10&column=2" \
-            -o profile/trophies.svg
+          # Reintentos "suaves"
+          curl_retry() {
+            curl -fsSL -A "$ua" --retry 5 --retry-delay 2 --retry-all-errors "$@"
+          }
 
-          curl -fsSL -A "$ua" \
+          # --- TROPHIES (tu Vercel + fallback opcional) ---
+          if ! curl_retry \
+            "${TROPHY_BASE}/?username=${USERNAME}&theme=onedark&margin-w=10&margin-h=10&column=2" \
+            -o profile/trophies.svg; then
+
+            # Fallbacks públicos (por si tu Vercel está KO puntualmente)
+            for base in \
+              "https://github-profile-trophy-liard-delta.vercel.app" \
+              "https://github-profile-trophy-fork-two.vercel.app" \
+              "https://github-profile-trophy-winning.vercel.app" \
+              "https://github-profile-trophy-kannan.vercel.app" \
+              "https://github-profile-trophy-tawny.vercel.app" \
+              "https://trophy.ryglcloud.net"
+            do
+              if curl_retry \
+                "${base}/?username=${USERNAME}&theme=onedark&margin-w=10&margin-h=10&column=2" \
+                -o profile/trophies.svg; then
+                break
+              fi
+            done
+          fi
+
+          # --- STATS / TOP-LANGS / STREAK (con retry) ---
+          curl_retry \
             "https://github-readme-stats.vercel.app/api?username=${USERNAME}&show_icons=true&locale=en" \
             -o profile/stats.svg
 
-          curl -fsSL -A "$ua" \
+          curl_retry \
             "https://github-readme-stats.vercel.app/api/top-langs?username=${USERNAME}&show_icons=true&locale=en&layout=compact" \
             -o profile/top-langs.svg
 
-          curl -fsSL -A "$ua" \
+          curl_retry \
             "https://streak-stats.demolab.com/?user=${USERNAME}" \
             -o profile/streak.svg
 

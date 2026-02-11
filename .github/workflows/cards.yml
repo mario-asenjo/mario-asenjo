@@ -18,59 +18,91 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Rebase temprano para minimizar conflictos con el workflow del snake
+      - name: Sync with remote
+        run: |
+          set -euxo pipefail
+          git pull --rebase
 
       - name: Ensure output dir
         run: mkdir -p profile
 
-      - name: Download cards (trophies, stats, langs, streak)
+      # --- TROPHIES (GENERADO LOCALMENTE EN CI, sin Vercel) ---
+      - name: Generate trophies (local)
+        uses: ryo-ma/github-profile-trophy@master
+        with:
+          username: ${{ github.repository_owner }}
+          output_path: profile/trophies.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- STATS / TOP-LANGS (TU INSTANCIA SELF-HOSTED) ---
+      - name: Download stats cards (self-hosted)
         env:
           USERNAME: ${{ github.repository_owner }}
-          TROPHY_BASE: https://github-profile-trophy-lbhtpknum-marios-projects-1a92c7d7.vercel.app
+          # Cambia esto por tu dominio de github-readme-stats self-hosted (sin / final)
+          STATS_BASE: https://TU-STATS.vercel.app
         run: |
           set -euxo pipefail
 
           ua="Mozilla/5.0 (GitHub Actions; profile cards)"
 
-          # Reintentos "suaves"
           curl_retry() {
-            curl -fsSL -A "$ua" --retry 5 --retry-delay 2 --retry-all-errors "$@"
+            curl -fsSL -A "$ua" --retry 6 --retry-delay 2 --retry-all-errors "$@"
           }
 
-          # --- TROPHIES (tu Vercel + fallback opcional) ---
-          if ! curl_retry \
-            "${TROPHY_BASE}/?username=${USERNAME}&theme=onedark&margin-w=10&margin-h=10&column=2" \
-            -o profile/trophies.svg; then
+          assert_svg() {
+            local f="$1"
+            # Aceptamos SVG normal o SVG con XML header
+            if ! head -c 200 "$f" | grep -Eq '<svg|<\?xml'; then
+              echo "ERROR: $f no parece un SVG válido. Primeros bytes:"
+              head -c 200 "$f" || true
+              exit 1
+            fi
+          }
 
-            # Fallbacks públicos (por si tu Vercel está KO puntualmente)
-            for base in \
-              "https://github-profile-trophy-liard-delta.vercel.app" \
-              "https://github-profile-trophy-fork-two.vercel.app" \
-              "https://github-profile-trophy-winning.vercel.app" \
-              "https://github-profile-trophy-kannan.vercel.app" \
-              "https://github-profile-trophy-tawny.vercel.app" \
-              "https://trophy.ryglcloud.net"
-            do
-              if curl_retry \
-                "${base}/?username=${USERNAME}&theme=onedark&margin-w=10&margin-h=10&column=2" \
-                -o profile/trophies.svg; then
-                break
-              fi
-            done
-          fi
-
-          # --- STATS / TOP-LANGS / STREAK (con retry) ---
+          # Stats
           curl_retry \
-            "https://github-readme-stats.vercel.app/api?username=${USERNAME}&show_icons=true&locale=en" \
+            "${STATS_BASE}/api?username=${USERNAME}&show_icons=true&locale=en" \
             -o profile/stats.svg
+          assert_svg profile/stats.svg
 
+          # Top langs
           curl_retry \
-            "https://github-readme-stats.vercel.app/api/top-langs?username=${USERNAME}&show_icons=true&locale=en&layout=compact" \
+            "${STATS_BASE}/api/top-langs?username=${USERNAME}&show_icons=true&locale=en&layout=compact" \
             -o profile/top-langs.svg
+          assert_svg profile/top-langs.svg
+
+      # --- STREAK (demolab suele ir bien; lo dejamos con retry + validación) ---
+      - name: Download streak card
+        env:
+          USERNAME: ${{ github.repository_owner }}
+        run: |
+          set -euxo pipefail
+
+          ua="Mozilla/5.0 (GitHub Actions; profile cards)"
+
+          curl_retry() {
+            curl -fsSL -A "$ua" --retry 6 --retry-delay 2 --retry-all-errors "$@"
+          }
+
+          assert_svg() {
+            local f="$1"
+            if ! head -c 200 "$f" | grep -Eq '<svg|<\?xml'; then
+              echo "ERROR: $f no parece un SVG válido. Primeros bytes:"
+              head -c 200 "$f" || true
+              exit 1
+            fi
+          }
 
           curl_retry \
             "https://streak-stats.demolab.com/?user=${USERNAME}" \
             -o profile/streak.svg
+          assert_svg profile/streak.svg
 
       - name: Commit cards
         run: |
@@ -84,6 +116,6 @@ jobs:
           # Si no hay cambios, no rompas el workflow
           git commit -m "Update README cards" || exit 0
 
-          # Evitar conflictos si snake ha pusheado justo antes
+          # Rebase antes de empujar (por si snake empujó entre medias)
           git pull --rebase
           git push

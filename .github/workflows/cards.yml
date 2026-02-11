@@ -26,7 +26,7 @@ jobs:
       - name: Download cards (trophies, stats, langs, streak)
         env:
           USERNAME: ${{ github.repository_owner }}
-          TROPHY_BASE: https://github-profile-trophy-lbhtpknum-marios-projects-1a92c7d7.vercel.app/
+          TROPHY_BASE: https://github-profile-trophy-lbhtpknum-marios-projects-1a92c7d7.vercel.app
         run: |
           set -euxo pipefail
 

@@ -1,72 +1,92 @@
 <div align="center">
 
-# Hi, I'm Mario Asenjo 👋
+# Mario Asenjo
 
-**Full-stack developer and cybersecurity enthusiast from Spain**
+### Software Engineer · Application Modernization · Cloud Architecture
 
-I build reliable systems, backend services, and practical apps — from low-level C and networking to Java/Spring and Android.
+I build tools for application modernization and software understanding: multi-language static analysis, AWS-native automation, Konveyor integrations, and Neo4j knowledge graphs that turn source code and technical evidence into traceable, actionable insights.
 
-[![42 Madrid](https://img.shields.io/badge/42_Madrid-masenjo-111827?style=for-the-badge&logo=42&logoColor=white)](https://www.42madrid.com/)
+Currently contributing to **Development Solutions · Cloud Architectures** at **Minsait (Indra)**.
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Mario_Asenjo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mario-asenjo-p%C3%A9rez-389547213)
-[![Email](https://img.shields.io/badge/Email-Contact_me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mario.asenjo.htb@gmail.com)
+[![Email](https://img.shields.io/badge/Email-mario.asenjo.htb%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mario.asenjo.htb@gmail.com)
 
 </div>
 
-## `> whoami`
+## What I work on
 
-```text
-42 Madrid student (masenjo)
-Focused on full-stack development, systems, and cybersecurity
-Building with intention: understand the machine, write for people
-```
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>Application modernization</h3>
+      Automating repository analysis and integrating technical evidence from Java, .NET, Python, and legacy assets to support modernization decisions.
+    </td>
+    <td width="33%" valign="top">
+      <h3>Software knowledge graphs</h3>
+      Modelling applications, repositories, technical assets, and dependencies in Neo4j with traceability and conservative, evidence-based inference.
+    </td>
+    <td width="33%" valign="top">
+      <h3>Cloud-native platforms</h3>
+      Designing reproducible services and workflows with AWS, serverless patterns, Kubernetes, secure APIs, and operational clarity.
+    </td>
+  </tr>
+</table>
 
-- 🧠 I enjoy working close to the system: **C, Linux, networking, concurrency**, and backend development with **Java, Spring, SQL, and containers**.
-- 🎯 Open to junior and internship opportunities in backend, full-stack, or security-oriented teams.
-- 🐕 Beyond code, I'm a dog trainer and have worked with **K9 special units and security groups**.
+## Engineering approach
 
-## Featured projects
+- **Reliable by design** — stable data contracts, idempotent processing, deterministic artifact keys, and pragmatic caching.
+- **Traceable outcomes** — keep authoritative data, original evidence, and derived projections clearly separated.
+- **Security-conscious integration** — OIDC/JWT, least-privilege IAM, secrets management, signed URLs, and careful token boundaries.
+- **Operable systems** — tests, health checks, runbooks, smoke tests, and deployment paths that other engineers can reproduce.
 
-| Project | What it is | Stack |
+## Technical focus
+
+<div align="center">
+
+[![My Skills](https://skillicons.dev/icons?i=python,bash,java,aws,kubernetes,docker,terraform,fastapi,neo4j,react,typescript,git&theme=dark)](https://skillicons.dev)
+
+<br /><br />
+
+![Konveyor](https://img.shields.io/badge/Konveyor-Application_Modernization-2563EB?style=for-the-badge)
+![Static Analysis](https://img.shields.io/badge/Static_Analysis-Multi--language-0F766E?style=for-the-badge)
+![Knowledge Graphs](https://img.shields.io/badge/Knowledge_Graphs-Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)
+![OIDC](https://img.shields.io/badge/OAuth_2.0_%2F_OIDC-Security-7C3AED?style=for-the-badge)
+
+</div>
+
+## Selected public work
+
+| Project | Description | Stack |
 | --- | --- | --- |
 | [A-Maze-ing](https://github.com/mario-asenjo/A-maze-ing) | Interactive graphical maze generator and solver with multiple algorithms, event-driven animation, and BFS pathfinding. | Python · MiniLibX |
 | [Codexion](https://github.com/mario-asenjo/Codexion) | C89/POSIX Threads concurrency simulator with atomic resource allocation and FIFO/EDF scheduling. | C · Pthreads |
 | [Asociación Mayores Villanueva](https://github.com/mario-asenjo/AsociacionMayoresVillanueva) | Voice-first Android app for activities and engagement at a senior centre. | Kotlin · Android · Firebase |
 
-## Technologies
-
-<div align="center">
-
-[![My Skills](https://skillicons.dev/icons?i=c,cpp,python,java,spring,kotlin,android,linux,docker,mysql,mongodb,git,bash&theme=dark)](https://skillicons.dev)
-
-</div>
-
-## 42 & GitHub
+## 42 Network & GitHub
 
 <div align="center">
 
 <a href="https://github.com/oakoudad/badge42">
-  <img src="https://badge.mediaplus.ma/greenbinary/masenjo" alt="masenjo's 42 profile" />
+  <img src="https://badge.mediaplus.ma/greenbinary/masenjo" alt="Mario's 42 profile" />
 </a>
 
 <br /><br />
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=mario-asenjo&show_icons=true&include_all_commits=true&rank_icon=github&theme=transparent&hide_border=true" alt="Mario's GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mario-asenjo&layout=compact&theme=transparent&hide_border=true" alt="Mario's most used languages" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=mario-asenjo&show_icons=true&include_all_commits=true&rank_icon=github&theme=transparent&hide_border=true" alt="Mario's GitHub statistics" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mario-asenjo&layout=compact&theme=transparent&hide_border=true" alt="Mario's most-used languages" />
 
 </div>
 
-## Let's connect
+## Connect
 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Mario_Asenjo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mario-asenjo-p%C3%A9rez-389547213)
 [![Codeforces](https://img.shields.io/badge/Codeforces-mario__asenjo-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/mario_asenjo)
 [![LeetCode](https://img.shields.io/badge/LeetCode-mario__asenjo-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/mario_asenjo/)
-[![Email](https://img.shields.io/badge/Email-mario.asenjo.htb%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mario.asenjo.htb@gmail.com)
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mario.asenjo.htb@gmail.com)
 
 </div>
-
-## Contribution trail
 
 <div align="center">
 

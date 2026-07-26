@@ -4,7 +4,7 @@
 
 ### Software Engineer · Application Modernization · Cloud Architecture
 
-I build tools for application modernization and software understanding: multi-language static analysis, AWS-native automation, Konveyor integrations, and Neo4j knowledge graphs that turn source code and technical evidence into traceable, actionable insights.
+I build tools for application modernization and software understanding: multi-language static analysis, AWS-native automation and knowledge graphs that turn source code and technical evidence into traceable, actionable insights.
 
 Currently contributing to **Development Solutions · Cloud Architectures** at **Minsait (Indra)**.
 
@@ -47,7 +47,6 @@ Currently contributing to **Development Solutions · Cloud Architectures** at **
 
 <br /><br />
 
-![Konveyor](https://img.shields.io/badge/Konveyor-Application_Modernization-2563EB?style=for-the-badge)
 ![Static Analysis](https://img.shields.io/badge/Static_Analysis-Multi--language-0F766E?style=for-the-badge)
 ![Knowledge Graphs](https://img.shields.io/badge/Knowledge_Graphs-Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)
 ![OIDC](https://img.shields.io/badge/OAuth_2.0_%2F_OIDC-Security-7C3AED?style=for-the-badge)

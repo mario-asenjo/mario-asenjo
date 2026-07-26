@@ -1,150 +1,75 @@
-# Hi 👋, I'm Mario Asenjo
+<div align="center">
 
-Full-stack developer and cybersecurity enthusiast from Spain.
+# Hi, I'm Mario Asenjo 👋
 
-Currently sharpening my skills at 42 (login: **masenjo**) and building projects around systems, web, and security.
+**Full-stack developer and cybersecurity enthusiast from Spain**
 
-📫 **Contact:** [mario.asenjo.htb@gmail.com](mailto:mario.asenjo.htb@gmail.com)
+I build reliable systems, backend services, and practical apps — from low-level C and networking to Java/Spring and Android.
 
-## About me
+[![42 Madrid](https://img.shields.io/badge/42_Madrid-masenjo-111827?style=for-the-badge&logo=42&logoColor=white)](https://www.42madrid.com/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mario_Asenjo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mario-asenjo-p%C3%A9rez-389547213)
+[![Email](https://img.shields.io/badge/Email-Contact_me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mario.asenjo.htb@gmail.com)
 
-- 💼 Focused on **full-stack development** and **cybersecurity**.
-- 🧠 I enjoy working close to the **system** (C, Linux, networking) and **backend** (Java, Spring, SQL, containers).
-- 🎯 Open to **junior / internship roles** in backend, full-stack, or security-oriented teams.
-- 🐕 Fun fact: I'm a **dog trainer** and have worked with **K9 special units and security groups**.
+</div>
 
-## 42 and GitHub
+## `> whoami`
 
-<p align="center">
-  <a href="https://github.com/oakoudad/badge42">
-    <img src="https://badge.mediaplus.ma/greenbinary/masenjo" alt="masenjo 42 stats" />
-  </a>
-</p>
+```text
+42 Madrid student (masenjo)
+Focused on full-stack development, systems, and cybersecurity
+Building with intention: understand the machine, write for people
+```
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=mario-asenjo&theme=flat&no-frame=true&no-bg=true&margin-w=8" alt="mario-asenjo trophies" />
-</p>
+- 🧠 I enjoy working close to the system: **C, Linux, networking, concurrency**, and backend development with **Java, Spring, SQL, and containers**.
+- 🎯 Open to junior and internship opportunities in backend, full-stack, or security-oriented teams.
+- 🐕 Beyond code, I'm a dog trainer and have worked with **K9 special units and security groups**.
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mario-asenjo&show_icons=true&include_all_commits=true&rank_icon=github" alt="mario-asenjo github stats" />
-</p>
+## Featured projects
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mario-asenjo&layout=compact" alt="mario-asenjo top languages" />
-</p>
+| Project | What it is | Stack |
+| --- | --- | --- |
+| [A-Maze-ing](https://github.com/mario-asenjo/A-maze-ing) | Interactive graphical maze generator and solver with multiple algorithms, event-driven animation, and BFS pathfinding. | Python · MiniLibX |
+| [Codexion](https://github.com/mario-asenjo/Codexion) | C89/POSIX Threads concurrency simulator with atomic resource allocation and FIFO/EDF scheduling. | C · Pthreads |
+| [Asociación Mayores Villanueva](https://github.com/mario-asenjo/AsociacionMayoresVillanueva) | Voice-first Android app for activities and engagement at a senior centre. | Kotlin · Android · Firebase |
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=mario-asenjo" alt="mario-asenjo streak stats" />
-</p>
+## Technologies
 
-## 🐍 Git History Mini-game
+<div align="center">
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mario-asenjo/mario-asenjo/main/output/github-contribution-grid-snake.svg" alt="snake animation" />
-</p>
+[![My Skills](https://skillicons.dev/icons?i=c,cpp,python,java,spring,kotlin,android,linux,docker,mysql,mongodb,git,bash&theme=dark)](https://skillicons.dev)
 
-<h2 align="center">🤝 Connect with me</h2>
+</div>
 
-<p align="center">
-  <a href="https://linkedin.com/in/mario-asenjo-pérez-389547213" target="_blank">
-    <img
-      align="center"
-      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
-      alt="linkedin mario asenjo"
-      height="30" width="40"
-    />
-  </a>
-  <a href="https://codeforces.com/profile/mario_asenjo" target="_blank">
-    <img
-      align="center"
-      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg"
-      alt="codeforces mario_asenjo"
-      height="30" width="40"
-    />
-  </a>
-  <a href="https://www.leetcode.com/mario_asenjo" target="_blank">
-    <img
-      align="center"
-      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
-      alt="leetcode mario_asenjo"
-      height="30" width="40"
-    />
-  </a>
-</p>
+## 42 & GitHub
 
-<h2 align="center">🛠 Languages and Tools</h2>
+<div align="center">
 
-<p align="center">
-  <a href="https://developer.android.com" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/>
-  </a>
-  <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/>
-  </a>
-  <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/>
-  </a>
-  <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/>
-  </a>
-  <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
-  </a>
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
-  </a>
-  <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/>
-  </a>
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
-  </a>
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
-  </a>
-  <a href="https://www.java.com" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
-  </a>
-  <a href="https://kotlinlang.org" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/>
-  </a>
-  <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
-  </a>
-  <a href="https://mariadb.org/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="40" height="40"/>
-  </a>
-  <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/>
-  </a>
-  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
-  </a>
-  <a href="https://www.oracle.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/>
-  </a>
-  <a href="https://postman.com" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/>
-  </a>
-  <a href="https://www.python.org" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
-  </a>
-  <a href="https://www.qt.io/" target="_blank" rel="noreferrer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="40" height="40"/>
-  </a>
-  <a href="https://spring.io/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/>
-  </a>
-  <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/>
-  </a>
-  <a href="https://unity.com/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/>
-  </a>
-  <a href="https://unrealengine.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" width="40" height="40"/>
-  </a>
-</p>
+<a href="https://github.com/oakoudad/badge42">
+  <img src="https://badge.mediaplus.ma/greenbinary/masenjo" alt="masenjo's 42 profile" />
+</a>
+
+<br /><br />
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=mario-asenjo&show_icons=true&include_all_commits=true&rank_icon=github&theme=transparent&hide_border=true" alt="Mario's GitHub stats" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mario-asenjo&layout=compact&theme=transparent&hide_border=true" alt="Mario's most used languages" />
+
+</div>
+
+## Let's connect
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mario_Asenjo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mario-asenjo-p%C3%A9rez-389547213)
+[![Codeforces](https://img.shields.io/badge/Codeforces-mario__asenjo-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/mario_asenjo)
+[![LeetCode](https://img.shields.io/badge/LeetCode-mario__asenjo-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/mario_asenjo/)
+[![Email](https://img.shields.io/badge/Email-mario.asenjo.htb%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mario.asenjo.htb@gmail.com)
+
+</div>
+
+## Contribution trail
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/mario-asenjo/mario-asenjo/main/output/github-contribution-grid-snake.svg" alt="Snake animation of Mario's contribution graph" />
+
+</div>

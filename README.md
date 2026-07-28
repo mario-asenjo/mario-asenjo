@@ -71,6 +71,25 @@ Currently contributing to **Development Solutions · Cloud Architectures** at **
 
 </div>
 
+## GitHub activity
+
+<div align="center">
+
+<img
+  src="./github-metrics.svg"
+  alt="Mario Asenjo's GitHub metrics"
+  width="90%"
+/>
+
+<br />
+
+![Followers](https://img.shields.io/github/followers/mario-asenjo?label=followers&style=social)
+![Profile views](https://komarev.com/ghpvc/?username=mario-asenjo&color=0A66C2&style=flat&label=profile+views)
+
+</div>
+
+<sub>Updated daily by a GitHub Action.</sub>
+
 ## Connect
 
 <div align="center">

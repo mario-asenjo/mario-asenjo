@@ -52,9 +52,11 @@ Currently contributing to **Development Solutions · Cloud Architectures** at **
 
 | Project | Description | Stack |
 | --- | --- | --- |
-| [A-Maze-ing](https://github.com/mario-asenjo/A-maze-ing) | Interactive maze generator and solver. | Python · MiniLibX |
-| [Codexion](https://github.com/mario-asenjo/Codexion) | POSIX Threads concurrency simulator with FIFO/EDF scheduling. | C · Pthreads |
-| [Asociación Mayores Villanueva](https://github.com/mario-asenjo/AsociacionMayoresVillanueva) | Voice-first Android app for a senior centre. | Kotlin · Android · Firebase |
+| [PPAOB](https://github.com/mario-asenjo/TFG-DAM-PPAOB) | Full-stack platform for controlled ELF-binary triage, risk prioritization, secure APIs, and specialised analysis workers. | Spring Boot · React · Python · Docker |
+| [Fly-In](https://github.com/mario-asenjo/Fly-In) | Capacity-aware drone routing simulator with a custom graph, A*, deterministic scheduling, and independent validation. | Python · Algorithms · Testing |
+| [Codexion](https://github.com/mario-asenjo/Codexion) | C89/POSIX Threads concurrency simulator with atomic resource allocation and FIFO/EDF scheduling. | C · Pthreads · Valgrind |
+| [A-Maze-ing](https://github.com/mario-asenjo/A-maze-ing) | Interactive graphical maze generator and solver with DFS, Prim, Kruskal, BFS, and reusable Python modules. | Python · MiniLibX |
+| [Asociación Mayores Villanueva](https://github.com/mario-asenjo/AsociacionMayoresVillanueva) | Voice-first Android app for a senior centre, built with layered architecture and a full CI quality gate. | Kotlin · Android · Firebase |
 
 ## 42 & GitHub
 

@@ -1,0 +1,105 @@
+name: Refresh Profile Cards
+
+on:
+  schedule:
+    - cron: "20 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/profile-cards.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-readme-assets
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download and validate profile SVGs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets
+
+          download_svg() {
+            local url="$1" dest="$2" min_size="$3"
+            local tmp
+            tmp="$(mktemp)"
+            if ! curl --fail --silent --show-error --location --retry 3 --retry-delay 3 --max-time 90 "$url" -o "$tmp"; then
+              echo "::warning::Could not refresh $dest; keeping the previous file if present."
+              rm -f "$tmp"
+              return 0
+            fi
+
+            if python3 - "$tmp" "$min_size" <<'PY'
+          import os
+          import sys
+          import xml.etree.ElementTree as ET
+
+          path, minimum = sys.argv[1], int(sys.argv[2])
+          if os.path.getsize(path) < minimum:
+              sys.exit("Downloaded payload too small")
+          try:
+              root = ET.parse(path).getroot()
+          except ET.ParseError as exc:
+              sys.exit(f"Not valid XML/SVG: {exc}")
+          if root.tag.rsplit("}", 1)[-1] != "svg":
+              sys.exit("Downloaded payload is not an SVG")
+          joined = " ".join((text or "") for text in root.itertext()).lower()
+          if any(term in joined for term in (
+              "something went wrong", "deployment_paused",
+              "deployment_disabled", "application error",
+              "service unavailable", "error fetching",
+          )):
+              sys.exit("SVG contains a provider error message")
+          PY
+            then
+              install -m 0644 "$tmp" "$dest"
+              echo "Updated $dest"
+            else
+              echo "::warning::Provider returned invalid data for $dest; retaining last valid SVG."
+            fi
+            rm -f "$tmp"
+          }
+
+          download_svg "https://github-stats-extended.vercel.app/api?username=mario-asenjo&show_icons=true&theme=tokyonight&hide_border=true&icon_color=8b5cf6&title_color=8b5cf6" assets/github-stats.svg 1500
+          download_svg "https://github-stats-extended.vercel.app/api/top-langs/?username=mario-asenjo&layout=compact&theme=tokyonight&hide_border=true&title_color=8b5cf6" assets/top-langs.svg 1200
+          download_svg "https://streak-stats.demolab.com/?user=mario-asenjo&theme=tokyonight&hide_border=true&disable_animations=true" assets/streak.svg 1200
+          download_svg "https://badge.mediaplus.ma/greenbinary/masenjo" assets/42badge.svg 20000
+
+          # Initial fallback only: never invent a 42 level, rank, or achievements.
+          # Once the 42 badge provider is reachable, its real SVG replaces this.
+          if [[ ! -s assets/42badge.svg ]]; then
+            cat > assets/42badge.svg <<'SVG'
+          <svg xmlns="http://www.w3.org/2000/svg" width="550" height="145" viewBox="0 0 550 145" role="img" aria-label="42 Madrid profile for masenjo">
+            <rect x="1" y="1" width="548" height="143" rx="14" fill="#1a1b27" stroke="#8b5cf6" stroke-width="2"/>
+            <text x="28" y="83" font-family="Arial,sans-serif" font-size="58" font-weight="700" fill="#8b5cf6">42</text>
+            <text x="125" y="59" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#e5e7eb">42 Madrid</text>
+            <text x="125" y="90" font-family="Arial,sans-serif" font-size="22" fill="#a9b1d6">masenjo</text>
+            <text x="125" y="116" font-family="Arial,sans-serif" font-size="13" fill="#a9b1d6">Profile summary · live badge temporarily unavailable</text>
+          </svg>
+          SVG
+          fi
+
+      - name: Commit updated cards
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          if git diff --cached --quiet; then
+            echo "No card changes."
+            exit 0
+          fi
+          git commit -m "chore(profile): refresh locally cached SVG cards"
+          git pull --rebase origin main
+          git push origin HEAD:main

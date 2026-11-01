@@ -62,18 +62,27 @@ Currently contributing to **Development Solutions · Cloud Architectures** at **
 
 <div align="center">
 
-<a href="https://github.com/oakoudad/badge42">
-  <img src="https://badge.mediaplus.ma/greenbinary/masenjo" alt="masenjo's 42 profile" />
+<a href="https://profile.intra.42.fr/users/masenjo">
+  <img src="./assets/42badge.svg" alt="42 Madrid · masenjo" width="550" />
 </a>
-
-<br /><br />
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=mario-asenjo&show_icons=true&include_all_commits=true&rank_icon=github&theme=transparent&hide_border=true" alt="Mario's GitHub statistics" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mario-asenjo&layout=compact&theme=transparent&hide_border=true" alt="Mario's most-used languages" />
 
 </div>
 
-## GitHub activity
+## 📊 GitHub statistics
+
+<div align="center">
+
+<!-- These cards are stored in this repository and refreshed by .github/workflows/profile-cards.yml. -->
+<img src="./assets/github-stats.svg" height="195" alt="Mario's GitHub statistics" />
+<img src="./assets/top-langs.svg" height="195" alt="Mario's most-used languages" />
+
+<br />
+
+<img src="./assets/streak.svg" alt="Mario's GitHub contribution streak" />
+
+</div>
+
+## 📈 GitHub activity
 
 <div align="center">
 
@@ -90,7 +99,7 @@ Currently contributing to **Development Solutions · Cloud Architectures** at **
 
 </div>
 
-<sub>Updated daily by a GitHub Action.</sub>
+<sub>Cards are refreshed daily by GitHub Actions. GitHub Metrics and the contribution snake retain their own workflows. If an external stats provider fails, the latest valid SVG is preserved.</sub>
 
 ## Connect
 
